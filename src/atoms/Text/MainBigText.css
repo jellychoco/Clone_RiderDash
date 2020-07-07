@@ -1,0 +1,9 @@
+#MainText {
+  font-size: 3rem;
+}
+
+@media (min-width: 640px) {
+  #MainText {
+    font-size: 6.8rem;
+  }
+}
