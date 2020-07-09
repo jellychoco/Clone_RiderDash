@@ -1,11 +1,21 @@
 import React from "react";
-import "./MainBigText.css";
+
+import styled, { css } from "styled-components";
+
+const P = styled.p`
+  font-size: 3rem;
+  color: white;
+
+  @media (min-width: 640px) {
+    font-size: 6.8rem;
+  }
+`;
 
 const MainBigText = ({ text = "" }) => {
   return (
-    <p id="MainText">
+    <P>
       <strong>{text}</strong>
-    </p>
+    </P>
   );
 };
 

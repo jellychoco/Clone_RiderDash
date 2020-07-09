@@ -2,30 +2,16 @@ import React from "react";
 import { withRouter, Link } from "react-router-dom";
 
 const TabsStyle = {
-  "font-weight": "700",
-  "letter-spacing": "1px",
+  "padding-left": "25px",
+  "font-size": "2em",
   "font-family": "proxima-nova",
   "font-weight": "600",
   "font-style": "normal",
   "letter-spacing": "2px",
   "text-transform": "uppercase",
   "text-decoration": "none",
-  "margin-left": "1em",
-  padding: "1em 1.5em !important",
-  //   display: "block",
-  "background-color": "#fff",
-  "-moz-osx-font-smoothing": "auto",
-  "-webkit-font-smoothing": "subpixel-antialiased",
-  //   color: "#fff",
-  "-webkit-transition":
-    "background-color .1s 0s ease-in-out,color .1s 0s ease-in-out",
-  "-moz-transition":
-    "background-color .1s 0s ease-in-out,color .1s 0s ease-in-out",
-  "-ms-transition":
-    "background-color .1s 0s ease-in-out,color .1s 0s ease-in-out",
-  "-o-transition":
-    "background-color .1s 0s ease-in-out,color .1s 0s ease-in-out",
-  transition: "background-color .1s 0s ease-in-out,color .1s 0s ease-in-out",
+  color: "white",
+  //   padding: "1em 1.5em !important",
 };
 
 const Tabs = ({ text = "", endpoint = "" }) => {
