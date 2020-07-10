@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import styled, { css } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import Logo from "../../atoms/Buttons/Logo";
 import Tabs from "../../atoms/Buttons/Tabs";
 import Dropdown from "../../atoms/Buttons/Dropdown";
@@ -17,13 +17,6 @@ const ToRight = styled.div`
   display: inline-block;
   flex-grow: 0.1;
 `;
-
-// const MenuWithEndpoint = [
-//   { menuText: "WHAT WE DO", endpoint: "/WHATWEDO" },
-//   { menuText: "PROJECTS", endpoint: "/PROJECTS" },
-//   { menuText: "PARTNERS", endpoint: "/PARTNERS" },
-//   { menuText: "CONTACT", endpoint: "/CONTACT" },
-// ];
 
 const HeaderNavBar = ({ MenuWithEndpoint }) => {
   return (

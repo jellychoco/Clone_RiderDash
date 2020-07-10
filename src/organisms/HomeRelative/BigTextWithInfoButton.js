@@ -1,13 +1,12 @@
-import React, { Fragment } from "react";
+import React from "react";
 import MainBigText from "../../atoms/Text/MainBigText";
 
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import InfoButton from "../../atoms/Buttons/InfoButton";
 
 const MainWrapper = styled.div`
-  z-index: 1;
-  width: 100vw;
-  height: 50vh;
+  width: 100%;
+  height: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -19,19 +18,34 @@ const InnerWrapper = styled.div`
   height: 90%;
 `;
 
-const text = "REIMAGINE \nAUTOMOTIVE SERVICE ";
+const BigTextWithInfoButton = ({
+  mainText,
+  buttonText,
+  endpoint,
+  hasButton = true,
+}) => {
+  if (hasButton) {
+    return (
+      <MainWrapper>
+        <InnerWrapper>
+          <MainBigText mainText={mainText} />
+          <p>
+            <InfoButton buttonText={buttonText} endpoint={endpoint} />
+          </p>
+        </InnerWrapper>
+      </MainWrapper>
+    );
+  }
 
-const BigTextWithInfoButton = () => {
-  return (
-    <MainWrapper>
-      <InnerWrapper>
-        <MainBigText text={text} />
-        <p>
-          <InfoButton text="LEARN MORE" endpoint="" />
-        </p>
-      </InnerWrapper>
-    </MainWrapper>
-  );
+  if (!hasButton) {
+    return (
+      <MainWrapper>
+        <InnerWrapper>
+          <MainBigText mainText={mainText} />
+        </InnerWrapper>
+      </MainWrapper>
+    );
+  }
 };
 
 export default BigTextWithInfoButton;

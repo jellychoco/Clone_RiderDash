@@ -1,23 +1,24 @@
 import React from "react";
 import { withRouter, Link } from "react-router-dom";
+import styledComponentsCjs from "styled-components";
 
-const TabsStyle = {
-  "padding-left": "25px",
-  "font-size": "2em",
-  "font-family": "proxima-nova",
-  "font-weight": "600",
-  "font-style": "normal",
-  "letter-spacing": "2px",
-  "text-transform": "uppercase",
-  "text-decoration": "none",
-  color: "white",
-  //   padding: "1em 1.5em !important",
-};
+const StyleTabs = styledComponentsCjs.p`
+display:inline-block;
+padding-left: 25px;
+font-size: 2em;
+font-family: proxima-nova;
+font-weight: 600;
+font-style: normal;
+letter-spacing: 2px;
+text-transform: uppercase;
+text-decoration: none;
+color: white;
+`;
 
 const Tabs = ({ text = "", endpoint = "" }) => {
   return (
-    <Link style={TabsStyle} to={endpoint}>
-      {text}
+    <Link to={endpoint}>
+      <StyleTabs>{text}</StyleTabs>
     </Link>
   );
 };

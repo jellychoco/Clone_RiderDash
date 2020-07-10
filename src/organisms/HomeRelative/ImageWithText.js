@@ -61,23 +61,22 @@ flex-grow:1;
 `;
 
 const ImageWithText = ({
+  endpoint = "",
   titleText = "",
   normalText = "",
   ImageUrl = "",
   reverse,
+  buttonText = "",
 }) => {
   return (
     <WrapperForDisplay reverse={reverse}>
-      {/* <ContentWrapper> */}
       <Image src={ImageUrl} alt="" />
-      {/* </ContentWrapper> */}
-      {/* <ContentWrapper> */}
+
       <TextBox>
         <TitleText>{titleText}</TitleText>
         <NormalText>{normalText}</NormalText>
-        <InfoButton text="LEARN MORE" />
+        <InfoButton endpoint={endpoint} buttonText={buttonText} />
       </TextBox>
-      {/* </ContentWrapper> */}
     </WrapperForDisplay>
   );
 };

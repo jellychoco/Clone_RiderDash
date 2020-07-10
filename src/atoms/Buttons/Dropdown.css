@@ -18,3 +18,7 @@
 .atoms_dropdown:hover .atoms_dropdown_content {
   display: block;
 }
+
+.dropdown_removeDecoration {
+  text-decoration: none;
+}

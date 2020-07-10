@@ -1,6 +1,6 @@
 import React from "react";
 
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const P = styled.p`
   font-size: 3rem;
@@ -11,10 +11,10 @@ const P = styled.p`
   }
 `;
 
-const MainBigText = ({ text = "" }) => {
+const MainBigText = ({ mainText = "" }) => {
   return (
     <P>
-      <strong>{text}</strong>
+      <strong>{mainText}</strong>
     </P>
   );
 };
