@@ -1,5 +1,5 @@
 import React from "react";
-import { withRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styledComponentsCjs from "styled-components";
 
 const StyleTabs = styledComponentsCjs.p`
@@ -23,4 +23,4 @@ const Tabs = ({ text = "", endpoint = "" }) => {
   );
 };
 
-export default withRouter(Tabs);
+export default Tabs;

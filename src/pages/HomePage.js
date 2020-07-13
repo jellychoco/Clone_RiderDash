@@ -48,6 +48,7 @@ mission, and the status of our endeavor."
             buttonText="LEARN MORE"
           />
           <ImageWithText
+            endpoint="/WE-HIRING"
             titleText="JOIN US"
             normalText="Ready to join our journey?
 Find the open positions."
