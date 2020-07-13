@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styledComponentsCjs from "styled-components";
 import SideNavBar from "../organisms/AboutPageRelative/SideNavBar";
 

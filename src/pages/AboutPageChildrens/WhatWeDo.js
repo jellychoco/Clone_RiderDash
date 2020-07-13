@@ -21,9 +21,9 @@ const LeftWrapper = styledComponentsCjs.nav`
 const RightWrapper = styledComponentsCjs.article`
 
 position:relative;
-left:100px;
+padding-left:100px;
 text-align : center;
- flex-grow: 2
+flex-grow: 2
 `;
 
 const TextWrapper = styledComponentsCjs.section`

@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
-import styledComponentsCjs from "styled-components";
 
 const GoogleMap = ({ google }) => {
   let myLocation = { lat: 37.5609986, lng: 126.9927573 };
@@ -24,5 +23,5 @@ const GoogleMap = ({ google }) => {
 };
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyDkGP45jtJ6CB3gnslicDvJ2QTSIwQUlAw",
+  apiKey: process.env.google_key,
 })(GoogleMap);

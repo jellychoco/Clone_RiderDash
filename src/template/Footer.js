@@ -3,7 +3,7 @@ import styledComponentsCjs from "styled-components";
 
 const FooterWrapperStyle = styledComponentsCjs.div`
 display:flex;
-height:100px;
+height:20vh;
 background-color : black;
  color:white;
  justify-content:center;

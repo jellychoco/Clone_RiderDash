@@ -6,6 +6,7 @@ import WhatWeDo from "./pages/AboutPageChildrens/WhatWeDo";
 import Partners from "./pages/AboutPageChildrens/Partners";
 import Contact from "./pages/AboutPageChildrens/Contact";
 import Projects from "./pages/AboutPageChildrens/Projects";
+import WeHiring from "./pages/WeHiring";
 function App() {
   return (
     <Fragment>
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/PROJECTS" component={Projects} />
         <Route exact path="/PARTNERS" component={Partners} />
         <Route exact path="/CONTACT" component={Contact} />
+        <Route exact path="/WE-HIRING" component={WeHiring} />
         <Route component={NotFound} />
       </Switch>
     </Fragment>

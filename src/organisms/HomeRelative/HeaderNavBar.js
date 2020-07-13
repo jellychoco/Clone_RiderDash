@@ -5,6 +5,7 @@ import Tabs from "../../atoms/Buttons/Tabs";
 import Dropdown from "../../atoms/Buttons/Dropdown";
 
 const Header = styled.div`
+  height: 15vh;
   display: flex;
   padding: 20px;
 `;
@@ -26,7 +27,7 @@ const HeaderNavBar = ({ MenuWithEndpoint }) => {
       </ToLeft>
       <ToRight>
         <Dropdown getMenuWithEndpoint={MenuWithEndpoint} mainMenuText="ABOUT" />
-        <Tabs endpoint="/" text="we're hiring" />
+        <Tabs endpoint="/WE-HIRING" text="we're hiring" />
       </ToRight>
     </Header>
   );
